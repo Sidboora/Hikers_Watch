@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/hikeapp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hiker's Watch"
+        android:textColor="#BFAAAA"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/latView"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:text="Lattitude: 40.7896543"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/longView"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:text="Longitude: 78.03284236428"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latView" />
+
+    <TextView
+        android:id="@+id/accuracyView"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="108dp"
+        android:text="Accuracy: 20"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latView" />
+
+    <TextView
+        android:id="@+id/altitudeview"
+        android:layout_width="296dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="184dp"
+        android:text="Altitude:200"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latView" />
+
+    <TextView
+        android:id="@+id/addressView"
+        android:layout_width="296dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="268dp"
+        android:text="Address : \n Opposite easyDay Charkhi Dadri"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
